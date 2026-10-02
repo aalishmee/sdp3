@@ -8,6 +8,7 @@ public class Main {
     public static void demo() {
         Renderer vector = new VectorRenderer();
         Renderer raster = new RasterRenderer();
+        Renderer ascii = new AsciiRenderer();
 
         int passed = 0;
         Circle c1 = new Circle(1, 2, vector);
@@ -44,7 +45,13 @@ public class Main {
             System.out.println("T5 FAIL");
         }
 
-        System.out.println("SUMMARY: " + passed + "/5 PASS");
+        Circle c6 = new Circle(3, 2, ascii);
+        passed += test("T6", c6, "ASCII circle radius=2");
+
+        Square s7 = new Square(4, 3, ascii);
+        passed += test("T7", s7, "ASCII square side=3");
+
+        System.out.println("SUMMARY: " + passed + "/7 PASS");
     }
 
     public static int test(String name, Shape shape, String expected) {
@@ -56,7 +63,6 @@ public class Main {
 
         System.out.println(name + " FAIL | result=" + result
                 + " | expected=" + expected);
-
         return 0;
     }
 }
