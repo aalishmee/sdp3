@@ -1,8 +1,8 @@
 # Assignment 3 — Bridge Pattern
-- **Name:** <Medina Alish>
-- **Group:** <SE-2538>
+- **Name:** Medina Alish
+- **Group:** SE-2538
 - **Topic:** A — Drawing
-- **Repository:** [<GitHub URL>](https://github.com/aalishmee/sdp3)
+- **Repository:** https://github.com/aalishmee/sdp3
 - **Base commit:** 9a7249d
 - **Submitted commit:** e7728c9
 
